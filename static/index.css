@@ -1,0 +1,10 @@
+.test{
+    color: brown;
+    background: bisque;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    border-style: double;
+    border-color: blueviolet;
+    border-width: 10px;
+}

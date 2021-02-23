@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Test</title>
+    <link rel="stylesheet" href="../static/index.css">
 </head>
 <body>
+    <div class="test">
+        Hello Word!!!
+    </div>
+
+    <br>
+
+    <form action="{{ url_for('test') }}" method="POST">
+        <span>账号 </span>
+        <input type="text" placeholder="请输入账号" name="account">
+        <span>  </span>
+        <input type="submit" value="提交"><br>
+    </form>
+
+    <br>
+    {% if mesg %}
+        {{ mesg }}
+    {% endif %}
 
 </body>
 </html>
